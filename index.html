@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2WIN</title>
+    <link rel="icon" href="src/image/icon/quiz.svg" type="image/png" />
     <link rel="stylesheet" href="src/base/main.css" />
     <script type="module" src="src/index.js"></script>
   </head>
@@ -29,40 +30,71 @@
             <ul class="nav-list">
               <li class="nav-item">
                 <img alt="nav-img" src="src/image/icon/quiz.svg" />
-                <a class="nan-link">My quizzes</a>
+                <a class="nav-link" href="#">My quizzes</a>
               </li>
 
               <li class="nav-item">
                 <img alt="nav-img" src="src/image/icon/verified.svg" />
-                <a class="nan-link">My quizzes</a>
+                <a class="nav-link">Completed quizzes</a>
               </li>
 
               <li class="nav-item">
-                      <img alt="nav-img" src="src/image/icon/question.svg" />
-                <a class="nan-link">My quizzes</a>
+                <img alt="nav-img" src="src/image/icon/question.svg" />
+                <a class="nav-link">Unmoderated quizzes</a>
               </li>
 
               <li class="nav-item">
-                      <img alt="nav-img" src="src/image/icon/folder-opened.svg" />
-                <a class="nan-link">My quizzes</a>
+                <img alt="nav-img" src="src/image/icon/folder-opened.svg" />
+                <a class="nav-link">Manage quiz folders</a>
               </li>
 
               <li class="nav-item">
-                      <img alt="nav-img" src="src/image/icon/trash.svg" />
-                <a class="nan-link">My quizzes</a>
+                <img alt="nav-img" src="src/image/icon/trash.svg" />
+                <a class="nav-link">Trash</a>
               </li>
 
+              <span class="nav-line"></span>
+
               <li class="nav-item">
-                      <img alt="nav-img" src="src/image/icon/user.svg" />
-                <a class="nan-link">My quizzes</a>
+                <img alt="nav-img" src="src/image/icon/user.svg" />
+                <a class="nav-link">My profile</a>
               </li>
+
+              <span class="nav-line"></span>
 
               <li class="nav-item">
                 <img alt="nav-img" src="src/image/icon/share-arrow.svg" />
-                <a class="nan-link">My quizzes</a>
+                <a class="nav-link">Exit</a>
               </li>
             </ul>
           </nav>
+        </div>
+      </div>
+
+      <div class="user-inf">
+        <div class="user-moder">
+          <img src="src/image/user.svg" alt="user" class="user-inf-img" />
+          <div class="meder-info">
+            <p class="moder-title-aside">User Name</p>
+            <p class="moder-name-aside">Moderator</p>
+          </div>
+        </div>
+        <div class="wrapper-edit">
+          <div class="edit">
+            <img
+              alt="edit"
+              src="src/image/icon/pencil-create.svg"
+              class="edit-img"
+            />
+            <p class="edit-raiting">Author rating</p>
+            <p class="edit-point">1190 points</p>
+          </div>
+
+          <div class="edit">
+            <img alt="edit" src="src/image/icon/icon.svg" class="edit-img" />
+            <p class="edit-raiting">User rating</p>
+            <p class="edit-point">353 points, 31.87%</p>
+          </div>
         </div>
       </div>
     </aside>
@@ -274,7 +306,7 @@
         </article>
       </section>
 
-       <section class="card-quiz">
+      <section class="card-quiz">
         <div class="wrapper-name">
           <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
           <h3 class="qiuz-title">
@@ -344,60 +376,102 @@
 
     <footer class="footer">
       <!-- <div class="menu-conteiner"> -->
-        <div class="wrapper-menu">
-          <img
-            alt="munu-icon"
-            class="munu-icon"
-            src="src\image\icon\quiz.svg"
-          />
-          <p class="menu-text">My quizzes</p>
-        </div>
+      <div class="wrapper-menu">
+        <img alt="munu-icon" class="munu-icon" src="src\image\icon\quiz.svg" />
+        <p class="menu-text">My quizzes</p>
+      </div>
 
-        <div class="wrapper-menu">
-          <img
-            alt="munu-icon"
-            class="munu-icon"
-            src="src/image/icon/verified.svg"
-          />
-          <p class="menu-text">Completed</p>
-        </div>
+      <div class="wrapper-menu">
+        <img
+          alt="munu-icon"
+          class="munu-icon"
+          src="src/image/icon/verified.svg"
+        />
+        <p class="menu-text">Completed</p>
+      </div>
 
-        <div class="wrapper-menu">
-          <img
-            alt="munu-icon"
-            class="munu-icon"
-            src="src/image/icon/question.svg"
-          />
-          <p class="menu-text">Unmoderated</p>
-        </div>
+      <div class="wrapper-menu">
+        <img
+          alt="munu-icon"
+          class="munu-icon"
+          src="src/image/icon/question.svg"
+        />
+        <p class="menu-text">Unmoderated</p>
+      </div>
 
-        <div class="wrapper-menu">
-          <img
-            alt="munu-icon"
-            class="munu-icon"
-            src="src/image/icon/folder-opened.svg"
-          />
-          <p class="menu-text">Manage folders</p>
-        </div>
+      <div class="wrapper-menu">
+        <img
+          alt="munu-icon"
+          class="munu-icon"
+          src="src/image/icon/folder-opened.svg"
+        />
+        <p class="menu-text">Manage folders</p>
+      </div>
 
-        <div class="wrapper-menu">
-          <img
-            alt="munu-icon"
-            class="munu-icon"
-            src="src/image/icon/more-horizontal.svg"
-          />
-          <p class="menu-text-more">More</p>
-        </div>
-
-        <div id="more-menu" class="more-menu">
-          <div class="more-menu-content">
-            <h3>User Info</h3>
-            <p>Name: John Doe</p>
-            <p>Email: john@example.com</p>
-            <button id="close-menu">Close</button>
-          </div>
-        </div>
+      <div class="wrapper-menu">
+        <img
+          alt="munu-icon"
+          class="munu-icon"
+          src="src/image/icon/more-horizontal.svg"
+        />
+        <a href="#more-menu" class="menu-text-more">More</a>
       </div>
     </footer>
+
+    <aside id="more-menu" class="more-menu">
+      <a href="#" class="close-btn" aria-label="Close menu">&times;</a>
+      <div class="more-menu-content">
+        <div class="user-inf">
+          <div class="user-moder">
+            <img src="src/image/user.svg" alt="user" class="user-inf-img" />
+            <div class="meder-info">
+              <p class="moder-title-aside">User Name</p>
+              <p class="moder-name-aside">Moderator</p>
+            </div>
+          </div>
+          <div class="wrapper-edit">
+            <div class="edit">
+              <img
+                alt="edit"
+                src="src/image/icon/pencil-create.svg"
+                class="edit-img"
+              />
+              <p class="edit-raiting">Author rating</p>
+              <p class="edit-point">1190 points</p>
+            </div>
+
+            <div class="edit">
+              <img alt="edit" src="src/image/icon/icon.svg" class="edit-img" />
+              <p class="edit-raiting">User rating</p>
+              <p class="edit-point">353 points, 31.87%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__bottom">
+          <nav class="menu__nav">
+            <ul class="nav-list">
+              <span class="nav-line"></span>
+              <li class="nav-item">
+                <img alt="nav-img" src="src/image/icon/trash.svg" />
+                <a class="nav-link">Trash</a>
+              </li>
+
+              <li class="nav-item">
+                <img alt="nav-img" src="src/image/icon/user.svg" />
+                <a class="nav-link">My profile</a>
+              </li>
+
+              <span class="nav-line"></span>
+
+              <li class="nav-item">
+                <img alt="nav-img" src="src/image/icon/share-arrow.svg" />
+                <a class="nav-link">Exit</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
   </body>
 </html>
