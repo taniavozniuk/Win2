@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2WIN</title>
     <link rel="icon" href="src/image/icon/quiz.svg" type="image/png" />
-    <link rel="stylesheet" href="src/base/main.css" />
+    <link rel="stylesheet" href="src/base/base.css" />
+    <link rel="stylesheet" href="src/adaptive/adaptive.css" />
     <script type="module" src="src/index.js"></script>
   </head>
   <body>
@@ -14,8 +15,12 @@
         <div class="conteiner-wrapper">
           <a href="#menu" class="icon icon--menu"></a>
           <button class="createBt">+ Create</button>
+          <h2 class="title">2WIN</h2>
         </div>
-        <h2 class="title">2WIN</h2>
+        <a class="header-menu-li">Home</a>
+        <a class="header-menu-li">Materials for Quiz</a>
+        <a class="header-menu-li">Feedback</a>
+
         <img class="user" alt="userPhoto" src="src/image/user.svg" />
       </div>
     </header>
@@ -99,279 +104,689 @@
       </div>
     </aside>
 
+    <aside class="sidebar">
+      <div class="sidebar-wrapper">
+        <div class="menu__bottom">
+          <nav class="menu__nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <img alt="nav-img" src="src/image/icon/quiz.svg" />
+                <a class="nav-link" href="#">My quizzes</a>
+              </li>
+
+              <li class="nav-item">
+                <img alt="nav-img" src="src/image/icon/verified.svg" />
+                <a class="nav-link">Completed quizzes</a>
+              </li>
+
+              <li class="nav-item">
+                <img alt="nav-img" src="src/image/icon/question.svg" />
+                <a class="nav-link">Unmoderated quizzes</a>
+              </li>
+
+              <li class="nav-item">
+                <img alt="nav-img" src="src/image/icon/folder-opened.svg" />
+                <a class="nav-link">Manage quiz folders</a>
+              </li>
+
+              <li class="nav-item">
+                <img alt="nav-img" src="src/image/icon/trash.svg" />
+                <a class="nav-link">Trash</a>
+              </li>
+
+              <span class="nav-line-des"></span>
+
+              <li class="nav-item">
+                <img alt="nav-img" src="src/image/icon/user.svg" />
+                <a class="nav-link">My profile</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="user-inf">
+          <div class="user-moder">
+            <img src="src/image/user.svg" alt="user" class="user-inf-img" />
+            <div class="meder-info">
+              <p class="moder-title-aside">User Name</p>
+              <p class="moder-name-aside">Moderator</p>
+            </div>
+          </div>
+          <div class="wrapper-edit">
+            <div class="edit">
+              <img
+                alt="edit"
+                src="src/image/icon/pencil-create.svg"
+                class="edit-img"
+              />
+              <p class="edit-raiting">Author rating</p>
+              <p class="edit-point">1190 points</p>
+            </div>
+
+            <div class="edit">
+              <img alt="edit" src="src/image/icon/icon.svg" class="edit-img" />
+              <p class="edit-raiting">User rating</p>
+              <p class="edit-point">353 points, 31.87%</p>
+            </div>
+          </div>
+
+          <div class="wraper-line">
+            <span class="nav-line-des-2"></span>
+            <img alt="arrow" src="src/image/icon/arrow.svg" />
+            <p class="line-text">Minimize</p>
+          </div>
+
+          <li class="nav-item-des">
+            <img alt="nav-img" src="src/image/icon/share-arrow.svg" />
+            <a class="nav-link">Exit</a>
+          </li>
+        </div>
+      </div>
+    </aside>
+
     <main class="main">
       <div class="main-wrapper">
         <h3 class="main-title">Unmoderated quizzes</h3>
         <button class="sortBy"><span class="plus">+</span> Sorted by</button>
       </div>
 
-      <section class="card-quiz">
-        <div class="wrapper-name">
-          <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
-          <h3 class="qiuz-title">
-            Quiz name. Ready to turn your ambitions into achievements –
-            Moderation 2
-          </h3>
+      <div class="main-table">
+        <div class="wrapper-table">
+          <p class="table-title">Quiz name</p>
+          <img alt="arrow" class="arrow" src="src/image/icon/table.svg" />
         </div>
-        <article class="qiuz-info">
-          <div class="wrapper-rating">
-            <div class="wraper-count-cal">
-              <div class="date">
-                <img alt="date" class="calendar" src="src/image/icon/cal.svg" />
-                <p class="date-des">31.01.2025</p>
-              </div>
-              <div class="rang">
-                <div class="wraper-date-star">
-                  <div class="wrapper-count">
-                    <img
-                      alt="count"
-                      class="count"
-                      src="src/image/icon/rang.svg"
-                    />
-                    <p class="count-des">0</p>
-                  </div>
-                  <div class="stars">
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
+        <div class="wrapper-table">
+          <p class="table-title">Results and rating</p>
+          <img alt="arrow" class="arrow" src="src/image/icon/table.svg" />
+        </div>
+        <div class="wrapper-table">
+          <p class="table-title">Created</p>
+          <img alt="arrow" class="arrow" src="src/image/icon/table.svg" />
+        </div>
+        <div class="wrapper-table">
+          <p class="table-title">Category</p>
+          <img alt="arrow" class="arrow" src="src/image/icon/table.svg" />
+        </div>
+        <div class="wrapper-table">
+          <p class="table-title">Moderation status</p>
+          <img alt="arrow" class="arrow" src="src/image/icon/table.svg" />
+        </div>
+
+        <div class="wrapper-table">
+          <p class="table-title">Moderation date</p>
+          <img alt="arrow" class="arrow" src="src/image/icon/table.svg" />
+        </div>
+      </div>
+
+      <div class="card-waraper">
+        <section class="card-quiz">
+          <div class="wrapper-name">
+            <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
+            <h3 class="qiuz-title">
+              Quiz name. Ready to turn your ambitions into achievements –
+              Moderation 2
+            </h3>
+          </div>
+          <article class="qiuz-info">
+            <div class="wrapper-rating">
+              <div class="wraper-count-cal">
+                <div class="date">
+                  <img
+                    alt="date"
+                    class="calendar"
+                    src="src/image/icon/cal.svg"
+                  />
+                  <p class="date-des">31.01.2025</p>
+                </div>
+                <div class="rang">
+                  <div class="wraper-date-star">
+                    <div class="wrapper-count">
+                      <img
+                        alt="count"
+                        class="count"
+                        src="src/image/icon/rang.svg"
+                      />
+                      <p class="count-des">0</p>
+                    </div>
+                    <div class="stars">
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <p class="qiuz-lessons">History / Europe History / Ukraine</p>
             </div>
-            <p class="qiuz-lessons">History / Europe History / Ukraine</p>
-          </div>
-        </article>
+          </article>
 
-        <article class="qiuz-info-about">
-          <div class="wrapper-percentage">
-            <p class="percentage">Moderate on 33%</p>
-            <div class="wrapper-start">
-              <p class="start-der">Sterted</p>
-              <p class="start-date">31.01.2025</p>
-            </div>
-          </div>
-          <div class="qiuz-moder">
-            <p class="moder">MN</p>
-            <div class="meder-info">
-              <p class="moder-title">Moderator Name</p>
-              <p class="moder-name">Beginner Moderator</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="bt-wrapper">
-          <button class="share">
-            <img alt="share" src="src/image/icon/link.svg" />
-          </button>
-          <button class="massenge">
-            <img alt="massenge" src="src/image/icon/rang.svg" />
-          </button>
-          <button class="start">Start moderation</button>
-        </article>
-      </section>
-
-      <section class="card-quiz">
-        <div class="wrapper-name">
-          <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
-          <h3 class="qiuz-title">
-            Quiz name. Ready to turn your ambitions into achievements –
-            Moderation 2
-          </h3>
-        </div>
-        <article class="qiuz-info">
-          <div class="wrapper-rating">
-            <div class="wraper-count-cal">
-              <div class="date">
-                <img alt="date" class="calendar" src="src/image/icon/cal.svg" />
-                <p class="date-des">31.01.2025</p>
+          <article class="qiuz-info-about">
+            <div class="wrapper-percentage">
+              <p class="percentage">Moderate on 33%</p>
+              <div class="wrapper-start">
+                <p class="start-der">Sterted</p>
+                <p class="start-date">31.01.2025</p>
               </div>
-              <div class="rang">
-                <div class="wraper-date-star">
-                  <div class="wrapper-count">
-                    <img
-                      alt="count"
-                      class="count"
-                      src="src/image/icon/rang.svg"
-                    />
-                    <p class="count-des">0</p>
-                  </div>
-                  <div class="stars">
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
+            </div>
+            <div class="qiuz-moder">
+              <p class="moder">MN</p>
+              <div class="meder-info">
+                <p class="moder-title">Moderator Name</p>
+                <p class="moder-name">Beginner Moderator</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="bt-wrapper">
+            <button class="share">
+              <img alt="share" src="src/image/icon/link.svg" />
+            </button>
+            <button class="massenge">
+              <img alt="massenge" src="src/image/icon/rang.svg" />
+            </button>
+            <button class="start">Start moderation</button>
+          </article>
+        </section>
+
+        <section class="card-quiz">
+          <div class="wrapper-name">
+            <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
+            <h3 class="qiuz-title">
+              Quiz name. Ready to turn your ambitions into achievements –
+              Moderation 2
+            </h3>
+          </div>
+          <article class="qiuz-info">
+            <div class="wrapper-rating">
+              <div class="wraper-count-cal">
+                <div class="date">
+                  <img
+                    alt="date"
+                    class="calendar"
+                    src="src/image/icon/cal.svg"
+                  />
+                  <p class="date-des">31.01.2025</p>
+                </div>
+                <div class="rang">
+                  <div class="wraper-date-star">
+                    <div class="wrapper-count">
+                      <img
+                        alt="count"
+                        class="count"
+                        src="src/image/icon/rang.svg"
+                      />
+                      <p class="count-des">0</p>
+                    </div>
+                    <div class="stars">
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <p class="qiuz-lessons">History / Europe History / Ukraine</p>
             </div>
-            <p class="qiuz-lessons">History / Europe History / Ukraine</p>
-          </div>
-        </article>
+          </article>
 
-        <article class="qiuz-info-about">
-          <div class="wrapper-percentage">
-            <p class="percentage">Moderate on 33%</p>
-            <div class="wrapper-start">
-              <p class="start-der">Sterted</p>
-              <p class="start-date">31.01.2025</p>
-            </div>
-          </div>
-          <div class="qiuz-moder">
-            <p class="moder">MN</p>
-            <div class="meder-info">
-              <p class="moder-title">Moderator Name</p>
-              <p class="moder-name">Beginner Moderator</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="bt-wrapper">
-          <button class="share">
-            <img alt="share" src="src/image/icon/link.svg" />
-          </button>
-          <button class="massenge">
-            <img alt="massenge" src="src/image/icon/rang.svg" />
-          </button>
-          <button class="start">Start moderation</button>
-        </article>
-      </section>
-
-      <section class="card-quiz">
-        <div class="wrapper-name">
-          <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
-          <h3 class="qiuz-title">
-            Quiz name. Ready to turn your ambitions into achievements –
-            Moderation 2
-          </h3>
-        </div>
-        <article class="qiuz-info">
-          <div class="wrapper-rating">
-            <div class="wraper-count-cal">
-              <div class="date">
-                <img alt="date" class="calendar" src="src/image/icon/cal.svg" />
-                <p class="date-des">31.01.2025</p>
+          <article class="qiuz-info-about">
+            <div class="wrapper-percentage">
+              <p class="percentage">Moderate on 33%</p>
+              <div class="wrapper-start">
+                <p class="start-der">Sterted</p>
+                <p class="start-date">31.01.2025</p>
               </div>
-              <div class="rang">
-                <div class="wraper-date-star">
-                  <div class="wrapper-count">
-                    <img
-                      alt="count"
-                      class="count"
-                      src="src/image/icon/rang.svg"
-                    />
-                    <p class="count-des">0</p>
-                  </div>
-                  <div class="stars">
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
+            </div>
+            <div class="qiuz-moder">
+              <p class="moder">MN</p>
+              <div class="meder-info">
+                <p class="moder-title">Moderator Name</p>
+                <p class="moder-name">Beginner Moderator</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="bt-wrapper">
+            <button class="share">
+              <img alt="share" src="src/image/icon/link.svg" />
+            </button>
+            <button class="massenge">
+              <img alt="massenge" src="src/image/icon/rang.svg" />
+            </button>
+            <button class="start">Start moderation</button>
+          </article>
+        </section>
+
+        <section class="card-quiz">
+          <div class="wrapper-name">
+            <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
+            <h3 class="qiuz-title">
+              Quiz name. Ready to turn your ambitions into achievements –
+              Moderation 2
+            </h3>
+          </div>
+          <article class="qiuz-info">
+            <div class="wrapper-rating">
+              <div class="wraper-count-cal">
+                <div class="date">
+                  <img
+                    alt="date"
+                    class="calendar"
+                    src="src/image/icon/cal.svg"
+                  />
+                  <p class="date-des">31.01.2025</p>
+                </div>
+                <div class="rang">
+                  <div class="wraper-date-star">
+                    <div class="wrapper-count">
+                      <img
+                        alt="count"
+                        class="count"
+                        src="src/image/icon/rang.svg"
+                      />
+                      <p class="count-des">0</p>
+                    </div>
+                    <div class="stars">
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <p class="qiuz-lessons">History / Europe History / Ukraine</p>
             </div>
-            <p class="qiuz-lessons">History / Europe History / Ukraine</p>
-          </div>
-        </article>
+          </article>
 
-        <article class="qiuz-info-about">
-          <div class="wrapper-percentage">
-            <p class="percentage">Moderate on 33%</p>
-            <div class="wrapper-start">
-              <p class="start-der">Sterted</p>
-              <p class="start-date">31.01.2025</p>
-            </div>
-          </div>
-          <div class="qiuz-moder">
-            <p class="moder">MN</p>
-            <div class="meder-info">
-              <p class="moder-title">Moderator Name</p>
-              <p class="moder-name">Beginner Moderator</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="bt-wrapper">
-          <button class="share">
-            <img alt="share" src="src/image/icon/link.svg" />
-          </button>
-          <button class="massenge">
-            <img alt="massenge" src="src/image/icon/rang.svg" />
-          </button>
-          <button class="start">Start moderation</button>
-        </article>
-      </section>
-
-      <section class="card-quiz">
-        <div class="wrapper-name">
-          <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
-          <h3 class="qiuz-title">
-            Quiz name. Ready to turn your ambitions into achievements –
-            Moderation 2
-          </h3>
-        </div>
-        <article class="qiuz-info">
-          <div class="wrapper-rating">
-            <div class="wraper-count-cal">
-              <div class="date">
-                <img alt="date" class="calendar" src="src/image/icon/cal.svg" />
-                <p class="date-des">31.01.2025</p>
+          <article class="qiuz-info-about">
+            <div class="wrapper-percentage">
+              <p class="percentage">Moderate on 33%</p>
+              <div class="wrapper-start">
+                <p class="start-der">Sterted</p>
+                <p class="start-date">31.01.2025</p>
               </div>
-              <div class="rang">
-                <div class="wraper-date-star">
-                  <div class="wrapper-count">
-                    <img
-                      alt="count"
-                      class="count"
-                      src="src/image/icon/rang.svg"
-                    />
-                    <p class="count-des">0</p>
-                  </div>
-                  <div class="stars">
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
-                    <div class="stars__star"></div>
+            </div>
+            <div class="qiuz-moder">
+              <p class="moder">MN</p>
+              <div class="meder-info">
+                <p class="moder-title">Moderator Name</p>
+                <p class="moder-name">Beginner Moderator</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="bt-wrapper">
+            <button class="share">
+              <img alt="share" src="src/image/icon/link.svg" />
+            </button>
+            <button class="massenge">
+              <img alt="massenge" src="src/image/icon/rang.svg" />
+            </button>
+            <button class="start">Start moderation</button>
+          </article>
+        </section>
+
+        <section class="card-quiz">
+          <div class="wrapper-name">
+            <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
+            <h3 class="qiuz-title">
+              Quiz name. Ready to turn your ambitions into achievements –
+              Moderation 2
+            </h3>
+          </div>
+          <article class="qiuz-info">
+            <div class="wrapper-rating">
+              <div class="wraper-count-cal">
+                <div class="date">
+                  <img
+                    alt="date"
+                    class="calendar"
+                    src="src/image/icon/cal.svg"
+                  />
+                  <p class="date-des">31.01.2025</p>
+                </div>
+                <div class="rang">
+                  <div class="wraper-date-star">
+                    <div class="wrapper-count">
+                      <img
+                        alt="count"
+                        class="count"
+                        src="src/image/icon/rang.svg"
+                      />
+                      <p class="count-des">0</p>
+                    </div>
+                    <div class="stars">
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <p class="qiuz-lessons">History / Europe History / Ukraine</p>
             </div>
-            <p class="qiuz-lessons">History / Europe History / Ukraine</p>
-          </div>
-        </article>
+          </article>
 
-        <article class="qiuz-info-about">
-          <div class="wrapper-percentage">
-            <p class="percentage">Moderate on 33%</p>
-            <div class="wrapper-start">
-              <p class="start-der">Sterted</p>
-              <p class="start-date">31.01.2025</p>
+          <article class="qiuz-info-about">
+            <div class="wrapper-percentage">
+              <p class="percentage">Moderate on 33%</p>
+              <div class="wrapper-start">
+                <p class="start-der">Sterted</p>
+                <p class="start-date">31.01.2025</p>
+              </div>
             </div>
-          </div>
-          <div class="qiuz-moder">
-            <p class="moder">MN</p>
-            <div class="meder-info">
-              <p class="moder-title">Moderator Name</p>
-              <p class="moder-name">Beginner Moderator</p>
+            <div class="qiuz-moder">
+              <p class="moder">MN</p>
+              <div class="meder-info">
+                <p class="moder-title">Moderator Name</p>
+                <p class="moder-name">Beginner Moderator</p>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <article class="bt-wrapper">
-          <button class="share">
-            <img alt="share" src="src/image/icon/link.svg" />
-          </button>
-          <button class="massenge">
-            <img alt="massenge" src="src/image/icon/rang.svg" />
-          </button>
-          <button class="start">Start moderation</button>
-        </article>
-      </section>
+          <article class="bt-wrapper">
+            <button class="share">
+              <img alt="share" src="src/image/icon/link.svg" />
+            </button>
+            <button class="massenge">
+              <img alt="massenge" src="src/image/icon/rang.svg" />
+            </button>
+            <button class="start">Start moderation</button>
+          </article>
+        </section>
+
+        <section class="card-quiz">
+          <div class="wrapper-name">
+            <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
+            <h3 class="qiuz-title">
+              Quiz name. Ready to turn your ambitions into achievements –
+              Moderation 2
+            </h3>
+          </div>
+          <article class="qiuz-info">
+            <div class="wrapper-rating">
+              <div class="wraper-count-cal">
+                <div class="date">
+                  <img
+                    alt="date"
+                    class="calendar"
+                    src="src/image/icon/cal.svg"
+                  />
+                  <p class="date-des">31.01.2025</p>
+                </div>
+                <div class="rang">
+                  <div class="wraper-date-star">
+                    <div class="wrapper-count">
+                      <img
+                        alt="count"
+                        class="count"
+                        src="src/image/icon/rang.svg"
+                      />
+                      <p class="count-des">0</p>
+                    </div>
+                    <div class="stars">
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="qiuz-lessons">History / Europe History / Ukraine</p>
+            </div>
+          </article>
+
+          <article class="qiuz-info-about">
+            <div class="wrapper-percentage">
+              <p class="percentage">Moderate on 33%</p>
+              <div class="wrapper-start">
+                <p class="start-der">Sterted</p>
+                <p class="start-date">31.01.2025</p>
+              </div>
+            </div>
+            <div class="qiuz-moder">
+              <p class="moder">MN</p>
+              <div class="meder-info">
+                <p class="moder-title">Moderator Name</p>
+                <p class="moder-name">Beginner Moderator</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="bt-wrapper">
+            <button class="share">
+              <img alt="share" src="src/image/icon/link.svg" />
+            </button>
+            <button class="massenge">
+              <img alt="massenge" src="src/image/icon/rang.svg" />
+            </button>
+            <button class="start">Start moderation</button>
+          </article>
+        </section>
+
+        <section class="card-quiz">
+          <div class="wrapper-name">
+            <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
+            <h3 class="qiuz-title">
+              Quiz name. Ready to turn your ambitions into achievements –
+              Moderation 2
+            </h3>
+          </div>
+          <article class="qiuz-info">
+            <div class="wrapper-rating">
+              <div class="wraper-count-cal">
+                <div class="date">
+                  <img
+                    alt="date"
+                    class="calendar"
+                    src="src/image/icon/cal.svg"
+                  />
+                  <p class="date-des">31.01.2025</p>
+                </div>
+                <div class="rang">
+                  <div class="wraper-date-star">
+                    <div class="wrapper-count">
+                      <img
+                        alt="count"
+                        class="count"
+                        src="src/image/icon/rang.svg"
+                      />
+                      <p class="count-des">0</p>
+                    </div>
+                    <div class="stars">
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="qiuz-lessons">History / Europe History / Ukraine</p>
+            </div>
+          </article>
+
+          <article class="qiuz-info-about">
+            <div class="wrapper-percentage">
+              <p class="percentage">Moderate on 33%</p>
+              <div class="wrapper-start">
+                <p class="start-der">Sterted</p>
+                <p class="start-date">31.01.2025</p>
+              </div>
+            </div>
+            <div class="qiuz-moder">
+              <p class="moder">MN</p>
+              <div class="meder-info">
+                <p class="moder-title">Moderator Name</p>
+                <p class="moder-name">Beginner Moderator</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="bt-wrapper">
+            <button class="share">
+              <img alt="share" src="src/image/icon/link.svg" />
+            </button>
+            <button class="massenge">
+              <img alt="massenge" src="src/image/icon/rang.svg" />
+            </button>
+            <button class="start">Start moderation</button>
+          </article>
+        </section>
+
+        <section class="card-quiz">
+          <div class="wrapper-name">
+            <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
+            <h3 class="qiuz-title">
+              Quiz name. Ready to turn your ambitions into achievements –
+              Moderation 2
+            </h3>
+          </div>
+          <article class="qiuz-info">
+            <div class="wrapper-rating">
+              <div class="wraper-count-cal">
+                <div class="date">
+                  <img
+                    alt="date"
+                    class="calendar"
+                    src="src/image/icon/cal.svg"
+                  />
+                  <p class="date-des">31.01.2025</p>
+                </div>
+                <div class="rang">
+                  <div class="wraper-date-star">
+                    <div class="wrapper-count">
+                      <img
+                        alt="count"
+                        class="count"
+                        src="src/image/icon/rang.svg"
+                      />
+                      <p class="count-des">0</p>
+                    </div>
+                    <div class="stars">
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="qiuz-lessons">History / Europe History / Ukraine</p>
+            </div>
+          </article>
+
+          <article class="qiuz-info-about">
+            <div class="wrapper-percentage">
+              <p class="percentage">Moderate on 33%</p>
+              <div class="wrapper-start">
+                <p class="start-der">Sterted</p>
+                <p class="start-date">31.01.2025</p>
+              </div>
+            </div>
+            <div class="qiuz-moder">
+              <p class="moder">MN</p>
+              <div class="meder-info">
+                <p class="moder-title">Moderator Name</p>
+                <p class="moder-name">Beginner Moderator</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="bt-wrapper">
+            <button class="share">
+              <img alt="share" src="src/image/icon/link.svg" />
+            </button>
+            <button class="massenge">
+              <img alt="massenge" src="src/image/icon/rang.svg" />
+            </button>
+            <button class="start">Start moderation</button>
+          </article>
+        </section>
+
+        <section class="card-quiz">
+          <div class="wrapper-name">
+            <img alt="quiz-img" src="src/image/photo.svg" class="quiz-img" />
+            <h3 class="qiuz-title">
+              Quiz name. Ready to turn your ambitions into achievements –
+              Moderation 2
+            </h3>
+          </div>
+          <article class="qiuz-info">
+            <div class="wrapper-rating">
+              <div class="wraper-count-cal">
+                <div class="date">
+                  <img
+                    alt="date"
+                    class="calendar"
+                    src="src/image/icon/cal.svg"
+                  />
+                  <p class="date-des">31.01.2025</p>
+                </div>
+                <div class="rang">
+                  <div class="wraper-date-star">
+                    <div class="wrapper-count">
+                      <img
+                        alt="count"
+                        class="count"
+                        src="src/image/icon/rang.svg"
+                      />
+                      <p class="count-des">0</p>
+                    </div>
+                    <div class="stars">
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                      <div class="stars__star"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="qiuz-lessons">History / Europe History / Ukraine</p>
+            </div>
+          </article>
+
+          <article class="qiuz-info-about">
+            <div class="wrapper-percentage">
+              <p class="percentage">Moderate on 33%</p>
+              <div class="wrapper-start">
+                <p class="start-der">Sterted</p>
+                <p class="start-date">31.01.2025</p>
+              </div>
+            </div>
+            <div class="qiuz-moder">
+              <p class="moder">MN</p>
+              <div class="meder-info">
+                <p class="moder-title">Moderator Name</p>
+                <p class="moder-name">Beginner Moderator</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="bt-wrapper">
+            <button class="share">
+              <img alt="share" src="src/image/icon/link.svg" />
+            </button>
+            <button class="massenge">
+              <img alt="massenge" src="src/image/icon/rang.svg" />
+            </button>
+            <button class="start">Start moderation</button>
+          </article>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
